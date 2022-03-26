@@ -108,6 +108,28 @@ img {
   overflow: hidden;
 } 
 
+.shape{
+  background-color: rgba(55, 74, 109, 0.5);
+  filter: blur(112px);
+  border-radius: 50%;
+}
+
+.shape__big{
+  width: 400px;
+  height: 400px;
+}
+
+.shape__small{
+  width: 300px;
+  height: 300px;
+}
+
+.shape__smaller{
+  width: 180px;
+  height: 180px;
+  filter: blur(64px);
+}
+
 .header{
   width: 100%;
   background-color: transparent;
@@ -192,15 +214,21 @@ img {
   cursor: pointer;
 }
 
-/*Navbar style classes ends*/
-
-/*Show menu style classes starts*/
-
+/*Show menu*/
 .show-menu{
   right: 0;
 }
 
-/*Show menu style classes ends*/
+/*Change background header*/
+.scroll-header{
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--body-color);
+  box-shadow: 0 2px 4px #030303;
+}
+
+/*Active link*/
+
+/*Navbar style classes ends*/
 
 /*Home style classes starts*/
 
@@ -285,7 +313,7 @@ img {
 
 .home__button{
   position: relative;
-  border: 2px solid #08915f;
+  border: 2px solid #089191;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -299,18 +327,204 @@ img {
 }
 .home__button::before{
   content: '';
-  border: 2px solid #02d98a;
+  border: 2px solid #02c0d9;
   width: 90px;
   height: 90px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: 0 0 12px #02d98a;
+  box-shadow: 0 0 12px #02c0d9;
   transition: 0.3s;
   animation: button 3s infinite;
 }
 
-/*Button animation*/
-/*@keyframes */
+.home .shape__big,
+.home .shape__small{
+  position: absolute;
 
+}
+
+.home .shape__big{
+  left: -9rem;
+  top: -4rem;
+}
+
+.home .shape__small{
+  right: -10rem;
+  bottom: 3rem;
+}
+
+/*Start button animation*/
+@keyframes button{
+  0%{
+    box-shadow: 0 0 12px #02c0d9;
+  }
+  50%{
+    box-shadow: 0 0 24px #02c0d9;
+  }
+  100%{
+    box-shadow: 0 0 12px #02c0d9;
+  }
+}
 /*Home style classes ends*/
+
+/*Popular style classes starts*/
+
+.popular__container{
+  padding-top: 1rem;
+}
+
+.popular__card{
+  position: relative;
+  width: 238px;
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.popular__card .shape__smaller{
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+
+.popular__title,
+.popular__subtitle,
+.popular__image{
+  position: relative;
+}
+
+.popular__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.popular__subtitle{
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.popular__image{
+  width: 160px;
+  margin: 0.75rem 0 1.25rem 1.25rem;
+  transition: 0.3s;
+}
+
+.popular__data{
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  gap: 0.5rem 1.25reml;
+  margin-bottom: 2rem;
+}
+
+.popular__data-group{
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: var(--smaller-font-size);
+  color: var(--white-color);
+}
+
+.popular__data i{
+  font-size: 1rem;
+}
+
+.popular__time{
+  font-size: var(--h3-font-size);
+}
+
+.popular__button{
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.popular__button i{
+  font-size: 1.25rem;
+}
+
+.popular__card:hover .popular__image{
+  transform: translateY(-0.25rem);
+}
+
+/*Popular style classes ends*/
+
+/*Swiper*/
+.swiper-pagination-bullet{
+  background: var(--text-color);
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
+
+/*Buttons style*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  font-size: var(--normal-font-size);
+  transition: 0.3s;
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+/*About style classes starts*/
+.about__container{
+  row-gap: 6rem;
+}
+
+.about__group{
+  position: relative;
+}
+
+.about__image{
+  width: 310px;
+  border-radius: 0.5rem;
+}
+
+.about__card{
+  width: 180px;
+  position: absolute;
+  right: 0;
+  bottom: -2.5rem;
+  background-color: rgba(3, 3, 3, 0.1);
+  backdrop-filter: blur(16px);
+  padding: 1rem 0.75rem;
+  border-radius: 1.25rem;
+}
+
+.about__card-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.about__card-description{
+  font-size: var(--smaller-font-size);
+}
+
+.about__title{
+  text-align: initial;
+  margin-bottom: 2rem;
+}
+
+.about__description{
+  margin-bottom: 2rem;
+}
+
+
+/*About style classes ends*/
+
+
 

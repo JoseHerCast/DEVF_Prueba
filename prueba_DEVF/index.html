@@ -11,7 +11,10 @@
         <link rel="stylesheet" href="">
 
         <!--Distribution network for icons-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" >
+
+        <!--Distribution network for sliders-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
         <!--SCSS--> 
         <link rel="stylesheet" href="">
@@ -66,6 +69,9 @@
 
             <!--Home view starts-->
             <section class="home section" id="home">
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h1 class="home__title">
@@ -113,7 +119,163 @@
 
             <!--Popular view starts-->
             <section class="popular section" id="popular">
+                <h2 class="section__title">Choose your next exoplanet</h2>
+                <div class="popular__container container swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
 
+                            <h1 class="popular__title">Kepler-22 b</h1>
+                            <h3 class="popular__subtitle">A potentially rocky world, larger than Earth</h3>
+
+                            <img src="assets/img/1599_Kepler22b.png" alt="" class="popular__image">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-lightbulb-fill"></i>
+                                    2011
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-scales-2-fill"></i>
+                                    36 Earths
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-earth-line"></i>
+                                    Super earth
+                                </div>
+                            </div>
+
+                            <h3 class="popular__time">635 light-years</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-eye-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Kepler-16 b</h1>
+                            <h3 class="popular__subtitle">A giant planet composed mainly of gas</h3>
+
+                            <img src="assets/img/1814_Kepler-16b.png" alt="" class="popular__image">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-lightbulb-fill"></i>
+                                    2011
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-scales-2-fill"></i>
+                                    0.333 Jupiters
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-earth-line"></i>
+                                    Gas giant
+                                </div>
+                            </div>
+
+                            <h3 class="popular__time">245 light-years</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-eye-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">WASP-12 b</h1>
+                            <h3 class="popular__subtitle">An egg-shaped world being devoured by its star</h3>
+
+                            <img src="assets/img/5120_wasp12b.png" alt="" class="popular__image">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-lightbulb-fill"></i>
+                                    2008
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-scales-2-fill"></i>
+                                    1.465 Jupiters
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-earth-line"></i>
+                                    Gas giant
+                                </div>
+                            </div>
+
+                            <h3 class="popular__time">1000 light-years</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-eye-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Kepler-452 b</h1>
+                            <h3 class="popular__subtitle">A potentially rocky world, larger than Earth</h3>
+
+                            <img src="assets/img/5471_212_Kepler452b.png" alt="" class="popular__image">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-lightbulb-fill"></i>
+                                    2015
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-scales-2-fill"></i>
+                                    3.29 Earths
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-earth-line"></i>
+                                    Super earth
+                                </div>
+                            </div>
+
+                            <h3 class="popular__time">2000 light-years</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-eye-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">TRAPPIST-1 e</h1>
+                            <h3 class="popular__subtitle">A rocky world outside our solar system</h3>
+
+                            <img src="assets/img/3453_TRAPPIST-1e.png" alt="" class="popular__image">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-lightbulb-fill"></i>
+                                    2017
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-scales-2-fill"></i>
+                                    0.692 Earths
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-earth-line"></i>
+                                    Terrestrial
+                                </div>
+                            </div>
+
+                            <h3 class="popular__time">41 light-years</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-eye-fill"></i>
+                            </button>
+                        </article>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
             <!--Popular view ends-->
 
@@ -127,7 +289,33 @@
 
             <!--About view starts-->
             <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <img class="about__image" src="assets/img/iss040e080833_medium.jpg" alt="">
+                        
+                        <div class="about__card">
+                            <h3 class="about__card-title">2.500+</h3>
+                            <p class="about__card-description">
+                                Some data about earth
+                            </p>
+                        </div>
+                    </div>
 
+
+                    <div class="about__data">
+
+                        <h2 class="section__title about__title">
+                            More info about earth or another planet
+                        </h2>
+
+                        <p class="about__description">
+                            Information from de NASA lab or something like that
+                        </p>
+
+                        <a href="" class="button">Know more</a>
+
+                    </div>
+                </div>
             </section>
             <!--About view ends-->
 
@@ -146,7 +334,7 @@
         <script src=""></script>
 
         <!--SJS-->
-        <script src=""></script>
+        <script src="/prueba_DEVF/js/swiper-bundle.min.js"></script>
 
         <!--Mixitup JS-->
         <script src=""></script>

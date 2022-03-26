@@ -7,6 +7,7 @@ Image and video library: -https://images-api.nasa.gov/asset/
 
 */
 
+
 /*This is an example about how to access NASA API APOD service*/
 let srcList = {
     apodUrl: 'https://api.nasa.gov/planetary/apod?',
@@ -29,7 +30,7 @@ xmlhttp.onreadystatechange=function(){
         let service_version=data['service_version'];
         let title=data['title'];
         let url=data['url'];
-        
+
         const apodImage = document.getElementById('apod-image');
         apodImage.src=hdurl;
     }
@@ -75,14 +76,36 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-
-/* CHANGE BACKGROUND HEADER */
+/*Change background header*/
 function scrollHeader(){
     const header = document.getElementById('header')
+    
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    this.scrollY >= 50? header.classList.add('scroll-header'):
+    header.classList.remove('scroll-header');
+
 }
 window.addEventListener('scroll', scrollHeader)
+
+/*Popular swiper*/
+
+var swiperPopular = new Swiper(".popular__container", {
+    loop: true,
+    spaceBetween: 24,
+    slidesPerView: 'auto',
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          spaceBetween: 48,
+        },
+      },
+  });
 
 /* TESTIMONIAL SWIPER */
 let testimonialSwiper = new Swiper(".testimonial-swiper", {
