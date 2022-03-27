@@ -206,7 +206,7 @@
                                 </div>
                             </div>
 
-                            <h3 class="popular__time">1000 light-years</h3>
+                            <h3 class="popular__time">1,000 light-years</h3>
 
                             <button class="button popular__button">
                                 <i class="ri-eye-fill"></i>
@@ -236,7 +236,7 @@
                                 </div>
                             </div>
 
-                            <h3 class="popular__time">2000 light-years</h3>
+                            <h3 class="popular__time">2,000 light-years</h3>
 
                             <button class="button popular__button">
                                 <i class="ri-eye-fill"></i>
@@ -281,8 +281,17 @@
 
             <!--apod view starts-->
             <section class="apod section" id="apod">
-                <div class="apod__container">
-                    <img class="apod__image" id="apod-image" src="" alt="">
+                <div class="apod__container container grid">
+
+                    <div class="apod__group">
+                        <h1 class="apod__title" id="apod-title">Kepler-7 b</h1>
+                        <h3 class="apod__subtitle" id="apod-date">A giant planet composed mainly of gas</h3>
+                        
+                        <img class="apod__image" id="apod-image" src="" alt="">
+
+                        <p class="apod__description" id="apod-description">
+                        </p>
+                    </div>
                 </div>
             </section>
             <!--apod view ends-->
@@ -319,6 +328,170 @@
             </section>
             <!--About view ends-->
 
+            <!--Features view starts-->
+            <section class="features section">
+                <h2 class="section__title">
+                    More info
+                </h2>
+                <div class="features__container container grid">
+                    <div class="features__group">
+                        <img src="/prueba_DEVF/assets/img/a-sky-view-of-earth-from-suomi-npp_16611703184_o_medium.png" alt="" class="features__image">
+
+                        <div class="features__card features__card-1">
+                            <h3 class="features__card-title">Mass</h3>
+                            <p class="features__card-description">5,9736x10^24 Kg</p>
+                        </div>
+
+                        <div class="features__card features__card-2">
+                            <h3 class="features__card-title">Volume</h3>
+                            <p class="features__card-description">1,08321x10^12 Km^3</p>
+                        </div>
+
+                        <div class="features__card features__card-3">
+                            <h3 class="features__card-title">Surface</h3>
+                            <p class="features__card-description">510,072,000 km^2</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <img src="/prueba_DEVF/assets/img/space_background_medium.jpg" alt="" class="features__map">
+            </section>
+            <!--Features view ends-->
+
+            <!--Featured view starts-->
+            <div class="featured section" id="featured">
+                <h2 class="section__title">
+                    Featured exoplanets
+                </h2>
+
+                <div class="featured__container container">
+                    <ul class="featured__filters">
+                        <li>
+                            <button class="featured__item active__featured" data-filter="all">
+                                <span>All</span>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="featured__item" data-filter=".gas-giant">
+                                <img src="/prueba_DEVF/assets/img/gas_giant.png" alt="Gas giant">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="featured__item" data-filter=".neptunian">
+                                <img src="/prueba_DEVF/assets/img/neptunian.png" alt="Neptunian">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="featured__item" data-filter=".super-earth">
+                                <img src="/prueba_DEVF/assets/img/super_earth.png" alt="Super earth">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="featured__item" data-filter=".terrestrial">
+                                <img src="/prueba_DEVF/assets/img/terrestrial.png" alt="Terrestrial">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured__item" data-filter=".unknown">
+                                <img src="/prueba_DEVF/assets/img/unknown.png" alt="Unknown">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="featured__content grid">
+
+                        <article class="featured__card mix terrestrial">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">KOI-55 b</h1>
+                            <h3 class="featured__subtitle">A rocky world hotter than the Sun</h3>
+                            <img src="/prueba_DEVF/assets/img/1196_koi55b1200.png" alt="" class="featured__image">
+                            <h3 class="featured__time">4,000 light-years</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-rocket-2-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix gas-giant">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Kepler-7 b</h1>
+                            <h3 class="featured__subtitle">A giant planet composed mainly of gas</h3>
+                            <img src="/prueba_DEVF/assets/img/1801_kepler7bsnw169.png" alt="" class="featured__image">
+                            <h3 class="featured__time">3,000 light-years</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-rocket-2-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix super-earth">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">OGLE-2016-BLG-1195L b</h1>
+                            <h3 class="featured__subtitle">A potentially rocky world, larger than Earth</h3>
+                            <img src="/prueba_DEVF/assets/img/OGLE-2016-BLG-1195L-b.png" alt="" class="featured__image">
+                            <h3 class="featured__time">13,000 light-years</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-rocket-2-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix neptunian">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">AU Microscopii b</h1>
+                            <h3 class="featured__subtitle">A young planet blasted by its angry young star</h3>
+                            <img src="/prueba_DEVF/assets/img/7635_au_mic_b.png" alt="" class="featured__image">
+                            <h3 class="featured__time">32 light-years</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-rocket-2-fill"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix unknown">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">LkCa 15 b</h1>
+                            <h3 class="featured__subtitle">An unknown exoplanet that orbits a K-type star</h3>
+                            <img src="/prueba_DEVF/assets/img/unknown-planet.png" alt="" class="featured__image">
+                            <h3 class="featured__time">516 light-years</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-rocket-2-fill"></i>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <!--Featured view ends-->
+            <section class="offer section">
+                <div class="offer__container container grid">
+                    
+                    <img src="/prueba_DEVF/assets/img/STScI-J-v1927a.jpg" alt="" class="offer__bg">
+
+                    <div class="offer__data">
+                        <h2 class="section__title offer__title">
+                            Do you want to receive <br> the last news about Space?
+                        </h2>
+                        <p class="offer__description">
+                            Be the first to receive all information about new exoplantes, galaxies and stars by email. Subscribe our mailing list.
+                        </p>
+
+                        <a href="#" class="button">Subscribe Now</a>
+                    </div>
+
+                    <img src="/prueba_DEVF/assets/img/Life-on-Earth-and-Mars.png" alt="" class="offer__image">
+                </div>
+            </section>
         </main>
         <!--Main ends-->
 
@@ -328,16 +501,11 @@
         </footer>
         <!--Footer ends-->
 
-        <!--Scroll up-->
-
-        <!--Scroll reveal-->
-        <script src=""></script>
-
         <!--SJS-->
         <script src="/prueba_DEVF/js/swiper-bundle.min.js"></script>
 
         <!--Mixitup JS-->
-        <script src=""></script>
+        <script src="/prueba_DEVF/js/mixitup.min.js"></script>
 
         <!--Main JS-->
         <script src="js/main.js"></script>
