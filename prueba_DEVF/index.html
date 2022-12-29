@@ -1,513 +1,592 @@
- <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--Favicon-->
-        <link rel="shortcut icon" href="./assets/img/favicon.png" type="">
-
-        <!--Remix icons library-->
-        <link rel="stylesheet" href="">
-
-        <!--Distribution network for icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" >
-
-        <!--Distribution network for sliders-->
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-
-        <!--SCSS--> 
-        <link rel="stylesheet" href="">
-
-        <!--CSS-->
-        <link rel="stylesheet" href="css/styles.css">
-
-        <title>DEVF technical test</title>
-    </head>
-    <body>
-        <!--Header starts-->
-        <header class="header" id="header">
-            <!--Navbar starts-->
-            <nav class="nav container">
-                <!--Logo-->
-                <a href="#" class="nav__logo">
-                    <i class="ri-space-ship-line"></i>
-                    dventure
-                </a>
-                <!--Menu-->
-                <div class="nav__menu" id="nav-menu">
-                    <!--Options-->
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#popular" class="nav__link">Popular</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#apod" class="nav__link">APOD</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                    </ul>
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-fill"></i>
-                    </div>
-                </div>
-                <!--Toggle button-->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-fill"></i>
-                </div>
-            </nav>
-            <!--Navbar ends-->
-        </header>
-        <!--Header ends-->
-
-        <!--Main starts-->
-        <main class="main">
-
-            <!--Home view starts-->
-            <section class="home section" id="home">
-                <div class="shape shape__big"></div>
-                <div class="shape shape__small"></div>
-
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <h1 class="home__title">
-                            Chooose your next adventure
-                        </h1>
-                        <h2 class="home__subtitle">
-                            Earth
-                        </h2>
-                        <h3 class="home__earth">
-                            <i class="ri-earth-line"></i>
-                            "The only thing we all have in common"
-                        </h3>
-                    </div>
-                    <img class="home__image" src="./assets/img/PIA18033_medium.png" alt="">
-                    
-                    <div class="home__planet">
-
-                        <div class="home__planet-data">
-                            
-                            <div class="home__planet-icon">
-                                <i class="ri-cake-2-fill"></i>
-                            </div>
-                            <h2 class="home__planet-value">365.25</h2>
-                            <h3 class="home__planet-info">ORBITAL PERIOD</h3>
-                        </div>
-                        <div class="home__planet-data">
-                            <div class="home__planet-icon">
-                                <i class="ri-compasses-2-fill"></i>
-                            </div>
-                            <h2 class="home__planet-value">9.807 m/s^2</h2>
-                            <h3 class="home__planet-info">GRAVITY</h3>
-                        </div>
-                        <div class="home__planet-data">
-                            <div class="home__planet-icon">
-                                <i class="ri-temp-cold-line"></i>
-                            </div>
-                            <h2 class="home__planet-value">14 °C</h2>
-                            <h3 class="home__planet-info">TEMPERATURE</h3>
-                        </div>
-                    </div>
-                    <a href="#" class="home__button">START</a>
-                </div>
-            </section>
-            <!--Home view ends-->
-
-            <!--Popular view starts-->
-            <section class="popular section" id="popular">
-                <h2 class="section__title">Choose your next exoplanet</h2>
-                <div class="popular__container container swiper">
-                    <div class="swiper-wrapper">
-                        
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Kepler-22 b</h1>
-                            <h3 class="popular__subtitle">A potentially rocky world, larger than Earth</h3>
-
-                            <img src="./assets/img/1599_Kepler22b.png" alt="" class="popular__image">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-lightbulb-fill"></i>
-                                    2011
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-scales-2-fill"></i>
-                                    36 Earths
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-earth-line"></i>
-                                    Super earth
-                                </div>
-                            </div>
-
-                            <h3 class="popular__time">635 light-years</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-eye-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Kepler-16 b</h1>
-                            <h3 class="popular__subtitle">A giant planet composed mainly of gas</h3>
-
-                            <img src="./assets/img/1814_Kepler-16b.png" alt="" class="popular__image">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-lightbulb-fill"></i>
-                                    2011
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-scales-2-fill"></i>
-                                    0.333 Jupiters
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-earth-line"></i>
-                                    Gas giant
-                                </div>
-                            </div>
-
-                            <h3 class="popular__time">245 light-years</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-eye-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">WASP-12 b</h1>
-                            <h3 class="popular__subtitle">An egg-shaped world being devoured by its star</h3>
-
-                            <img src="./assets/img/5120_wasp12b.png" alt="" class="popular__image">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-lightbulb-fill"></i>
-                                    2008
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-scales-2-fill"></i>
-                                    1.465 Jupiters
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-earth-line"></i>
-                                    Gas giant
-                                </div>
-                            </div>
-
-                            <h3 class="popular__time">1,000 light-years</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-eye-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Kepler-452 b</h1>
-                            <h3 class="popular__subtitle">A potentially rocky world, larger than Earth</h3>
-
-                            <img src="./assets/img/5471_212_Kepler452b.png" alt="" class="popular__image">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-lightbulb-fill"></i>
-                                    2015
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-scales-2-fill"></i>
-                                    3.29 Earths
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-earth-line"></i>
-                                    Super earth
-                                </div>
-                            </div>
-
-                            <h3 class="popular__time">2,000 light-years</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-eye-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">TRAPPIST-1 e</h1>
-                            <h3 class="popular__subtitle">A rocky world outside our solar system</h3>
-
-                            <img src="./assets/img/3453_TRAPPIST-1e.png" alt="" class="popular__image">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-lightbulb-fill"></i>
-                                    2017
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-scales-2-fill"></i>
-                                    0.692 Earths
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-earth-line"></i>
-                                    Terrestrial
-                                </div>
-                            </div>
-
-                            <h3 class="popular__time">41 light-years</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-eye-fill"></i>
-                            </button>
-                        </article>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-            <!--Popular view ends-->
-
-            <!--apod view starts-->
-            <section class="apod section" id="apod">
-                <div class="apod__container container grid">
-
-                    <div class="apod__group">
-                        <h1 class="apod__title" id="apod-title">Kepler-7 b</h1>
-                        <h3 class="apod__subtitle" id="apod-date">A giant planet composed mainly of gas</h3>
-                        
-                        <img class="apod__image" id="apod-image" src="" alt="">
-
-                        <p class="apod__description" id="apod-description">
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!--apod view ends-->
-
-            <!--About view starts-->
-            <section class="about section" id="about">
-                <div class="about__container container grid">
-                    <div class="about__group">
-                        <img class="about__image" src="./assets/img/iss040e080833_medium.jpg" alt="">
-                        
-                        <div class="about__card">
-                            <h3 class="about__card-title">2.500+</h3>
-                            <p class="about__card-description">
-                                Some data about earth
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="about__data">
-
-                        <h2 class="section__title about__title">
-                            More info about earth or another planet
-                        </h2>
-
-                        <p class="about__description">
-                            Information from de NASA lab or something like that
-                        </p>
-
-                        <a href="" class="button">Know more</a>
-
-                    </div>
-                </div>
-            </section>
-            <!--About view ends-->
-
-            <!--Features view starts-->
-            <section class="features section">
-                <h2 class="section__title">
-                    More info
-                </h2>
-                <div class="features__container container grid">
-                    <div class="features__group">
-                        <img src="./assets/img/a-sky-view-of-earth-from-suomi-npp_16611703184_o_medium.png" alt="" class="features__image">
-
-                        <div class="features__card features__card-1">
-                            <h3 class="features__card-title">Mass</h3>
-                            <p class="features__card-description">5,9736x10^24 Kg</p>
-                        </div>
-
-                        <div class="features__card features__card-2">
-                            <h3 class="features__card-title">Volume</h3>
-                            <p class="features__card-description">1,08321x10^12 Km^3</p>
-                        </div>
-
-                        <div class="features__card features__card-3">
-                            <h3 class="features__card-title">Surface</h3>
-                            <p class="features__card-description">510,072,000 km^2</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <img src="./assets/img/space_background_medium.jpg" alt="" class="features__map">
-            </section>
-            <!--Features view ends-->
-
-            <!--Featured view starts-->
-            <div class="featured section" id="featured">
-                <h2 class="section__title">
-                    Featured exoplanets
-                </h2>
-
-                <div class="featured__container container">
-                    <ul class="featured__filters">
-                        <li>
-                            <button class="featured__item active__featured" data-filter="all">
-                                <span>All</span>
-                            </button>
-                        </li>
-
-                        <li>
-                            <button class="featured__item" data-filter=".gas-giant">
-                                <img src="./assets/img/gas_giant.png" alt="Gas giant">
-                            </button>
-                        </li>
-
-                        <li>
-                            <button class="featured__item" data-filter=".neptunian">
-                                <img src="./assets/img/neptunian.png" alt="Neptunian">
-                            </button>
-                        </li>
-
-                        <li>
-                            <button class="featured__item" data-filter=".super-earth">
-                                <img src="./assets/img/super_earth.png" alt="Super earth">
-                            </button>
-                        </li>
-
-                        <li>
-                            <button class="featured__item" data-filter=".terrestrial">
-                                <img src="./assets/img/terrestrial.png" alt="Terrestrial">
-                            </button>
-                        </li>
-                        <li>
-                            <button class="featured__item" data-filter=".unknown">
-                                <img src="./assets/img/unknown.png" alt="Unknown">
-                            </button>
-                        </li>
-                    </ul>
-
-                    <div class="featured__content grid">
-
-                        <article class="featured__card mix terrestrial">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">KOI-55 b</h1>
-                            <h3 class="featured__subtitle">A rocky world hotter than the Sun</h3>
-                            <img src="./assets/img/1196_koi55b1200.png" alt="" class="featured__image">
-                            <h3 class="featured__time">4,000 light-years</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-rocket-2-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix gas-giant">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">Kepler-7 b</h1>
-                            <h3 class="featured__subtitle">A giant planet composed mainly of gas</h3>
-                            <img src="./assets/img/1801_kepler7bsnw169.png" alt="" class="featured__image">
-                            <h3 class="featured__time">3,000 light-years</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-rocket-2-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix super-earth">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">OGLE-2016-BLG-1195L b</h1>
-                            <h3 class="featured__subtitle">A potentially rocky world, larger than Earth</h3>
-                            <img src="./assets/img/OGLE-2016-BLG-1195L-b.png" alt="" class="featured__image">
-                            <h3 class="featured__time">13,000 light-years</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-rocket-2-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix neptunian">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">AU Microscopii b</h1>
-                            <h3 class="featured__subtitle">A young planet blasted by its angry young star</h3>
-                            <img src="./assets/img/7635_au_mic_b.png" alt="" class="featured__image">
-                            <h3 class="featured__time">32 light-years</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-rocket-2-fill"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix unknown">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">LkCa 15 b</h1>
-                            <h3 class="featured__subtitle">An unknown exoplanet that orbits a K-type star</h3>
-                            <img src="./assets/img/unknown-planet.png" alt="" class="featured__image">
-                            <h3 class="featured__time">516 light-years</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-rocket-2-fill"></i>
-                            </button>
-                        </article>
-                    </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="">
+
+    <!--Remix icons library-->
+    <link rel="stylesheet" href="">
+
+    <!--Distribution network for icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <!--Distribution network for sliders-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!--SCSS-->
+    <link rel="stylesheet" href="">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Adventure</title>
+</head>
+
+<body>
+    <!--Header starts-->
+    <header class="header" id="header">
+        <!--Navbar starts-->
+        <nav class="nav container">
+            <!--Logo-->
+            <a href="#" class="nav__logo">
+                <i class="ri-space-ship-line"></i>
+                dventure
+            </a>
+            <!--Menu-->
+            <div class="nav__menu" id="nav-menu">
+                <!--Options-->
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">Popular</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#apod" class="nav__link">APOD</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill"></i>
                 </div>
             </div>
-            <!--Featured view ends-->
-            <section class="offer section">
-                <div class="offer__container container grid">
-                    
-                    <img src="./assets/img/STScI-J-v1927a.jpg" alt="" class="offer__bg">
+            <!--Toggle button-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+        <!--Navbar ends-->
+    </header>
+    <!--Header ends-->
 
-                    <div class="offer__data">
-                        <h2 class="section__title offer__title">
-                            Do you want to receive <br> the last news about Space?
-                        </h2>
-                        <p class="offer__description">
-                            Be the first to receive all information about new exoplantes, galaxies and stars by email. Subscribe our mailing list.
+    <!--Main starts-->
+    <main class="main">
+
+        <!--Home view starts-->
+        <section class="home section" id="home">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Chooose your next adventure
+                    </h1>
+                    <h2 class="home__subtitle">
+                        Earth
+                    </h2>
+                    <h3 class="home__earth">
+                        <i class="ri-earth-line"></i>
+                        "The only thing we all have in common"
+                    </h3>
+                </div>
+                <img class="home__image" src="./assets/img/PIA18033_medium.png" alt="">
+
+                <div class="home__planet">
+
+                    <div class="home__planet-data">
+
+                        <div class="home__planet-icon">
+                            <i class="ri-cake-2-fill"></i>
+                        </div>
+                        <h2 class="home__planet-value">365.25</h2>
+                        <h3 class="home__planet-info">ORBITAL PERIOD</h3>
+                    </div>
+                    <div class="home__planet-data">
+                        <div class="home__planet-icon">
+                            <i class="ri-compasses-2-fill"></i>
+                        </div>
+                        <h2 class="home__planet-value">9.807 m/s^2</h2>
+                        <h3 class="home__planet-info">GRAVITY</h3>
+                    </div>
+                    <div class="home__planet-data">
+                        <div class="home__planet-icon">
+                            <i class="ri-temp-cold-line"></i>
+                        </div>
+                        <h2 class="home__planet-value">14 °C</h2>
+                        <h3 class="home__planet-info">TEMPERATURE</h3>
+                    </div>
+                </div>
+                <a href="#" class="home__button">START</a>
+            </div>
+        </section>
+        <!--Home view ends-->
+
+        <!--Popular view starts-->
+        <section class="popular section" id="popular">
+            <h2 class="section__title">Choose your next exoplanet</h2>
+            <div class="popular__container container swiper">
+                <div class="swiper-wrapper">
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Kepler-22 b</h1>
+                        <h3 class="popular__subtitle">A potentially rocky world, larger than Earth</h3>
+
+                        <img src="./assets/img/1599_Kepler22b.png" alt="" class="popular__image">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-lightbulb-fill"></i>
+                                2011
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-scales-2-fill"></i>
+                                36 Earths
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-earth-line"></i>
+                                Super earth
+                            </div>
+                        </div>
+
+                        <h3 class="popular__time">635 light-years</h3>
+
+                        <button class="button popular__button">
+                            <i class="ri-eye-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Kepler-16 b</h1>
+                        <h3 class="popular__subtitle">A giant planet composed mainly of gas</h3>
+
+                        <img src="./assets/img/1814_Kepler-16b.png" alt="" class="popular__image">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-lightbulb-fill"></i>
+                                2011
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-scales-2-fill"></i>
+                                0.333 Jupiters
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-earth-line"></i>
+                                Gas giant
+                            </div>
+                        </div>
+
+                        <h3 class="popular__time">245 light-years</h3>
+
+                        <button class="button popular__button">
+                            <i class="ri-eye-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">WASP-12 b</h1>
+                        <h3 class="popular__subtitle">An egg-shaped world being devoured by its star</h3>
+
+                        <img src="./assets/img/5120_wasp12b.png" alt="" class="popular__image">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-lightbulb-fill"></i>
+                                2008
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-scales-2-fill"></i>
+                                1.465 Jupiters
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-earth-line"></i>
+                                Gas giant
+                            </div>
+                        </div>
+
+                        <h3 class="popular__time">1,000 light-years</h3>
+
+                        <button class="button popular__button">
+                            <i class="ri-eye-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Kepler-452 b</h1>
+                        <h3 class="popular__subtitle">A potentially rocky world, larger than Earth</h3>
+
+                        <img src="./assets/img/5471_212_Kepler452b.png" alt="" class="popular__image">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-lightbulb-fill"></i>
+                                2015
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-scales-2-fill"></i>
+                                3.29 Earths
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-earth-line"></i>
+                                Super earth
+                            </div>
+                        </div>
+
+                        <h3 class="popular__time">2,000 light-years</h3>
+
+                        <button class="button popular__button">
+                            <i class="ri-eye-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">TRAPPIST-1 e</h1>
+                        <h3 class="popular__subtitle">A rocky world outside our solar system</h3>
+
+                        <img src="./assets/img/3453_TRAPPIST-1e.png" alt="" class="popular__image">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-lightbulb-fill"></i>
+                                2017
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-scales-2-fill"></i>
+                                0.692 Earths
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-earth-line"></i>
+                                Terrestrial
+                            </div>
+                        </div>
+
+                        <h3 class="popular__time">41 light-years</h3>
+
+                        <button class="button popular__button">
+                            <i class="ri-eye-fill"></i>
+                        </button>
+                    </article>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--Popular view ends-->
+
+        <!--apod view starts-->
+        <section class="apod section" id="apod">
+            <div class="apod__container container grid">
+
+                <div class="apod__group">
+                    <h1 class="apod__title" id="apod-title">Kepler-7 b</h1>
+                    <h3 class="apod__subtitle" id="apod-date">A giant planet composed mainly of gas</h3>
+
+                    <img class="apod__image" id="apod-image" src="" alt="">
+
+                    <p class="apod__description" id="apod-description">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--apod view ends-->
+
+        <!--About view starts-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__group">
+                    <img class="about__image" src="./assets/img/iss040e080833_medium.jpg" alt="">
+
+                    <div class="about__card">
+                        <h3 class="about__card-title">2.500+</h3>
+                        <p class="about__card-description">
+                            Some data about earth
                         </p>
+                    </div>
+                </div>
 
-                        <a href="#" class="button">Subscribe Now</a>
+
+                <div class="about__data">
+
+                    <h2 class="section__title about__title">
+                        More info about earth or another planet
+                    </h2>
+
+                    <p class="about__description">
+                        Information from de NASA lab or something like that
+                    </p>
+
+                    <a href="" class="button">Know more</a>
+
+                </div>
+            </div>
+        </section>
+        <!--About view ends-->
+
+        <!--Features view starts-->
+        <section class="features section">
+            <h2 class="section__title">
+                More info
+            </h2>
+            <div class="features__container container grid">
+                <div class="features__group">
+                    <img src="./assets/img/a-sky-view-of-earth-from-suomi-npp_16611703184_o_medium.png" alt=""
+                        class="features__image">
+
+                    <div class="features__card features__card-1">
+                        <h3 class="features__card-title">Mass</h3>
+                        <p class="features__card-description">5,9736x10^24 Kg</p>
                     </div>
 
-                    <img src="./assets/img/Life-on-Earth-and-Mars.png" alt="" class="offer__image">
+                    <div class="features__card features__card-2">
+                        <h3 class="features__card-title">Volume</h3>
+                        <p class="features__card-description">1,08321x10^12 Km^3</p>
+                    </div>
+
+                    <div class="features__card features__card-3">
+                        <h3 class="features__card-title">Surface</h3>
+                        <p class="features__card-description">510,072,000 km^2</p>
+                    </div>
+
                 </div>
-            </section>
-        </main>
-        <!--Main ends-->
+            </div>
 
-        <!--Footer starts-->
-        <footer class="footer section">
-            
-        </footer>
-        <!--Footer ends-->
+            <img src="./assets/img/space_background_medium.jpg" alt="" class="features__map">
+        </section>
+        <!--Features view ends-->
 
-        <!--SJS-->
-        <script src="./js/swiper-bundle.min.js"></script>
+        <!--Featured view starts-->
+        <div class="featured section" id="featured">
+            <h2 class="section__title">
+                Featured exoplanets
+            </h2>
 
-        <!--Mixitup JS-->
-        <script src="./js/mixitup.min.js"></script>
+            <div class="featured__container container">
+                <ul class="featured__filters">
+                    <li>
+                        <button class="featured__item active__featured" data-filter="all">
+                            <span>All</span>
+                        </button>
+                    </li>
 
-        <!--Main JS-->
-        <script src="./js/main.js"></script>
-    </body>
+                    <li>
+                        <button class="featured__item" data-filter=".gas-giant">
+                            <img src="./assets/img/gas_giant.png" alt="Gas giant">
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="featured__item" data-filter=".neptunian">
+                            <img src="./assets/img/neptunian.png" alt="Neptunian">
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="featured__item" data-filter=".super-earth">
+                            <img src="./assets/img/super_earth.png" alt="Super earth">
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="featured__item" data-filter=".terrestrial">
+                            <img src="./assets/img/terrestrial.png" alt="Terrestrial">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".unknown">
+                            <img src="./assets/img/unknown.png" alt="Unknown">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="featured__content grid">
+
+                    <article class="featured__card mix terrestrial">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">KOI-55 b</h1>
+                        <h3 class="featured__subtitle">A rocky world hotter than the Sun</h3>
+                        <img src="./assets/img/1196_koi55b1200.png" alt="" class="featured__image">
+                        <h3 class="featured__time">4,000 light-years</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-rocket-2-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix gas-giant">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Kepler-7 b</h1>
+                        <h3 class="featured__subtitle">A giant planet composed mainly of gas</h3>
+                        <img src="./assets/img/1801_kepler7bsnw169.png" alt="" class="featured__image">
+                        <h3 class="featured__time">3,000 light-years</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-rocket-2-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix super-earth">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">OGLE-2016-BLG-1195L b</h1>
+                        <h3 class="featured__subtitle">A potentially rocky world, larger than Earth</h3>
+                        <img src="./assets/img/OGLE-2016-BLG-1195L-b.png" alt="" class="featured__image">
+                        <h3 class="featured__time">13,000 light-years</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-rocket-2-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix neptunian">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">AU Microscopii b</h1>
+                        <h3 class="featured__subtitle">A young planet blasted by its angry young star</h3>
+                        <img src="./assets/img/7635_au_mic_b.png" alt="" class="featured__image">
+                        <h3 class="featured__time">32 light-years</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-rocket-2-fill"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix unknown">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">LkCa 15 b</h1>
+                        <h3 class="featured__subtitle">An unknown exoplanet that orbits a K-type star</h3>
+                        <img src="./assets/img/unknown-planet.png" alt="" class="featured__image">
+                        <h3 class="featured__time">516 light-years</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-rocket-2-fill"></i>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--Featured view ends-->
+        <section class="offer section">
+            <div class="offer__container container grid">
+
+                <img src="./assets/img/STScI-J-v1927a.jpg" alt="" class="offer__bg">
+
+                <div class="offer__data">
+                    <h2 class="section__title offer__title">
+                        Do you want to receive <br> the last news about Space?
+                    </h2>
+                    <p class="offer__description">
+                        Be the first to receive all information about new exoplantes, galaxies and stars by email.
+                        Subscribe our mailing list.
+                    </p>
+
+                    <a href="#" class="button">Subscribe Now</a>
+                </div>
+
+                <img src="./assets/img/Life-on-Earth-and-Mars.png" alt="" class="offer__image">
+            </div>
+        </section>
+    </main>
+    <!--Main ends-->
+
+    <!--Footer starts-->
+    <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="" class="footer__logo">
+                    <i class="ri-space-ship-line"></i> dventure
+                </a>
+                <p class="footer__description">
+                    Lorem ipsum dolor sit amet consectetur <br>
+                    adipisicing elit. Ullam sed laborum saepe, <br>
+                    quod, quos.
+                </p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Compañía</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Planetas</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">History</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Catalog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Información</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">Solicitar catalogo</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Contáctanos</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Servicios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Síguenos</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </ul>
+            </div>
+            <span class="footer__copy">
+                &#169; JosHerCast. All rights reserved.
+            </span>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+    <!-- Scroll up starts -->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!-- Scroll up ends -->
+
+    <!-- Scroll reveal -->
+    <script src="js/scrollReveal.js"></script>
+
+    <!--SJS-->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!--Mixitup JS-->
+    <script src="./js/mixitup.min.js"></script>
+
+    <!--Main JS-->
+    <script src="./js/main.js"></script>
+</body>
+
 </html>
